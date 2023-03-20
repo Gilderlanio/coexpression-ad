@@ -1,4 +1,4 @@
-# Differential co-expression analysis in Alzheimer's disease.
+# Co-expression analysis in Alzheimer's disease.
 
 - The analyzes in this repository correspond to the analyzes of the manuscript submitted to Frontiers in Aging Neuroscience (under review).
 
