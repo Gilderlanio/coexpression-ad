@@ -1,0 +1,295 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is just an example/guide for you to refer to when submitting manuscripts to Frontiers, it is not mandatory to use Frontiers .cls files nor frontiers.tex  %
+% This will only generate the Manuscript, the final article will be typeset by Frontiers after acceptance.   
+%                                              %
+%                                                                                                                                                         %
+% When submitting your files, remember to upload this *tex file, the pdf generated with it, the *bib file (if bibliography is not within the *tex) and all the figures.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Version 3.4 Generated 2022/06/14 %%%
+%%% You will need to have the following packages installed: datetime, fmtcount, etoolbox, fcprefix, which are normally inlcuded in WinEdt. %%%
+%%% In http://www.ctan.org/ you can find the packages and how to install them, if necessary. %%%
+%%%  NB logo1.jpg is required in the path in order to correctly compile front page header %%%
+
+\documentclass[utf8]{FrontiersinHarvard} % for articles in journals using the Harvard Referencing Style (Author-Date), for Frontiers Reference Styles by Journal: https://zendesk.frontiersin.org/hc/en-us/articles/360017860337-Frontiers-Reference-Styles-by-Journal
+%\documentclass[utf8]{FrontiersinVancouver} % for articles in journals using the Vancouver Reference Style (Numbered), for Frontiers Reference Styles by Journal: https://zendesk.frontiersin.org/hc/en-us/articles/360017860337-Frontiers-Reference-Styles-by-Journal
+%\documentclass[utf8]{frontiersinFPHY_FAMS} % Vancouver Reference Style (Numbered) for articles in the journals "Frontiers in Physics" and "Frontiers in Applied Mathematics and Statistics" 
+
+%\setcitestyle{square} % for articles in the journals "Frontiers in Physics" and "Frontiers in Applied Mathematics and Statistics" 
+\usepackage{url,hyperref,lineno,microtype,subcaption}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{multirow}
+\usepackage{svg}
+
+\usepackage{soul,color}
+\soulregister\citet7
+\soulregister\citep7
+\soulregister\cite7
+\soulregister\ref7
+\soulregister\pageref7
+
+\linenumbers
+
+% Leave a blank line between paragraphs instead of using \\
+
+
+\def\keyFont{\fontsize{8}{11}\helveticabold }
+
+% Authors, for the paper (add full first names)
+\def\firstAuthorLast{Ribeiro-dos-Santos, A. {et~al.}}
+
+\def\Authors{Arthur Ribeiro-dos-Santos $^{1}$, Leonardo Miranda de Brito $^{1,2}$, Gilderlanio Santana de Araújo$^{1,*}$}
+
+%\def\firstAuthorLast{Sample {et~al.}} %use et al only if is more than 1 author
+%\def\Authors{First Author\,$^{1,*}$, Co-Author\,$^{2}$ and Co-Author\,$^{1,2}$}
+% Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
+% If one of the authors has a change of address, list the new address below the correspondence details using a superscript symbol and use the same symbol to indicate the author in the author list.
+\def\Address{%
+$^{1}$Programa de Pós-graduação em Genética e Biologia Molecular, Laboratório de Genética Humana e Médica, Instituto de Ciências Biológicas, Universidade Federal do Pará, Belém, 66075-110, Brazil.\\
+$^{2}$Centro de Informática, Universidade Federal de Pernambuco, Recife, 50740-600, Brazil}
+%\def\Address{$^{1}$Laboratory X, Institute X, Department X, Organization X, City X , State XX (only USA, Canada and Australia), Country X \\
+%$^{2}$Laboratory X, Institute X, Department X, Organization X, City X , State XX (only USA, Canada and Australia), Country X  }
+% The Corresponding Author should be marked with an asterisk
+% Provide the exact contact address (this time including street name and city zip code) and email of the corresponding author
+\def\corrAuthor{Gilderlanio Santana de Araújo}
+\def\corrEmail{gilderlanio@gmail.com}
+
+
+\begin{document}
+\onecolumn
+\firstpage{1}
+
+\title[Differential Gene-Gene Co-expression in Alzheimer's Disease]{The Fusiform Gyrus Exhibits Differential Gene-Gene Co-expression in Alzheimer's Disease} 
+
+\author[\firstAuthorLast ]{\Authors} %This field will be automatically populated
+\address{} %This field will be automatically populated
+\correspondance{} %This field will be automatically populated
+
+\extraAuth{}% If there are more than 1 corresponding author, comment this line and uncomment the next one.
+%\extraAuth{corresponding Author2 \\ Laboratory X2, Institute X2, Department X2, Organization X2, Street X2, City X2 , State XX2 (only USA, Canada and Australia), Zip Code2, X2 Country X2, email2@uni2.edu}
+
+
+\maketitle
+
+
+\begin{abstract}
+
+%%% Leave the Abstract empty if your article does not require one, please see the Summary Table for full details.
+\section{}
+
+Alzheimer's Disease (AD) is an irreversible neurodegenerative disease clinically characterized by the presence of $\beta$-amyloid plaques and tau deposits in various regions of the brain. However, the underlying factors that contribute to the development of AD remain unclear. Recently, the fusiform gyrus has been identified as a critical brain region associated with mild cognitive impairment, which may increase the risk of AD development. In our study, we performed gene co-expression and differential co-expression network analyses, as well as gene-expression-based prediction, using RNA-seq transcriptome data from post-mortem fusiform gyrus tissue samples collected from both cognitively healthy individuals and those with AD. We accessed differential co-expression networks in large cohorts such as ROSMAP, MSBB, and Mayo, and conducted over-representation analyses of gene pathways and gene ontology. Our results comprise four exclusive gene hubs in co-expression modules of Alzheimer's Disease, including \textit{FNDC3A}, \textit{MED23}, \textit{NRIP1}, and \textit{PKN2}. Further, we identified three genes with differential co-expressed links, namely \textit{FAM153B}, \textit{CYP2C8}, and \textit{CKMT1B}. The differential co-expressed network showed moderate predictive performance for AD, with an area under the curve ranging from 0.71 to 0.76 (+/- 0.07). The over-representation analysis identified enrichment for Toll-Like Receptors Cascades and signaling pathways, such as G protein events, \textit{PIP2} hydrolysis and \textit{EPH-Epherin} mechanism, in the fusiform gyrus. In conclusion, our findings shed new light on the molecular pathophysiology of AD by identifying new genes and biological pathways involved, emphasizing the crucial role of gene regulatory networks in the fusiform gyrus.
+
+
+
+\tiny
+ \keyFont{ \section{Keywords:} co-expression networks, differential co-expression networks, hub genes, regulatory networks, fusiform gyrus, Alzheimer's disease, brain tissue.}
+\end{abstract}
+
+\section{Introduction}
+
+Alzheimer's Disease (AD) is an irreversible neurodegenerative disease that leads to severe dementia and incremental disability in adults, largely in the elderly \citep*{facts2022}. Basic research has expanded our understanding of the multifaceted pathophysiological mechanisms of Alzheimer's Disease (AD), affirming that many previous molecular changes arise earlier before its severe form \citep{aisen2017path}. 
+
+Currently, molecular factors of AD rely on $\beta$-amyloid plaques and neurofibrillary tau proliferation in the neocortex \citep{jack2018nia}. Along with it, several molecular layers involved in AD make our systematic understanding insufficient concerning the complexity of the disease, such as gene and miRNA regulation \citep{souza2016combined, brito2020differential}, mitochondrial genetics \citep{cavalcante2022mitochondrial, song2022targeted}, and especially gene-gene interactions in AD across brain regions \citep{wang2021genome, lancour2020analysis}. Although there are no well-defined points of molecular distinction, clinical and genetic studies divide AD into early-onset AD associated with molecular modifications of \textit{APP}, \textit{PSEN1} and \textit{PSEN2} \citep{wan2020meta} and the late-onset AD that is mainly associated with risk variants in the \textit{APOE} gene, while recently, 75 genes are reported as risk factors in multi-ethnic studies of AD \citep{bellenguez2022new}.
+
+Recently, the fusiform gyrus, which is a brain region that plays roles in  the vision for perception, object recognition, and reading has gained attention in epigenetic studies
+\citep{srinivasan2020alzheimer}. Specific changes in functional connectivity of the fusiform gyrus have been reported in mild cognitive impairment, considered a  risk factor of conversion to AD \citep{ma2020fusiform}. \citet{chang2016hippocampal} indicated atrophy of the fusiform gyrus as a consequence of amyloid load within the hippocampus. Besides, the mechanisms involved in AD pathology concerning the fusiform gyrus remain underexplored. \citet{ma2020fusiform} considers that AD-linked genes in the fusiform gyrus may be critical in AD onset progression and, therefore, stand promising targets for early diagnosis and therapy. Thus, an investigation into the molecular mechanisms in the fusiform gyrus of AD patients is necessary.
+
+In this study, we utilized co-expression networks and differential co-expression network analysis to gain a better understanding of gene-gene interactions in the AD fusiform gyrus. Our objective was to identify potential genes that could predict AD and contribute to the overall understanding of gene-gene interactions in the fusiform gyrus of AD patients. The results of our analyses revealed a total of seven genes, four of which were identified through the co-expression analysis and three through the differential co-expression analysis. We also developed a differential gene co-expression network with moderate predictive performance, which was combined with extreme Gradient Boosting (XGBoost) to predict AD.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Materials and Methods}
+
+\subsection{RNA-seq from fusiform gyrus of Alzheimer's Disease and neurologically normal post-mortem}
+
+The RNA-seq transcriptome dataset was obtained from the Gene Expression Omnibus under accession number GSE125583. The RNA was extracted from the fusiform gyrus of post-mortem tissue from individuals with AD or who were neurologically normal as controls (NC) (n = 289), with age ranges from 60 to 103 years old \citep{srinivasan2020alzheimer}. Samples were extracted from the fusiform gyrus of neurologically normal controls (n = 70, aged 71 to 103) and AD patients (n = 219, aged 60 to 103), and were sequenced using the Illumina HiSeq 2500 sequencer in single-end read mode.
+
+The process of downloading the \textit{.sra} files for each sample were carried out using the prefetch tool from \textit{SRA Toolkit} \citep{leinonen2010sequence}. Subsequently, all \textit{.sra} files were converted to \textit{.fastq} files with the help of \textit{fastq-dump}. Quality control checks were performed on each sample both before and after RNA-seq preprocessing. The Trimmomatic package was utilized to remove Illumina adapters, as well as to trim and filter low-quality reads and bases. Trimmomatic was executed in Single End Mode, using the ILLUMINACLIP command to remove adapters that were specified in the TruSeq3-SE.fa file, with the threshold values for seed mismatches, palindrome clip, and simple clip set to 2, 30, and 10, respectively. Other commands, such as LEADING, TRAILING, SLIDINGWINDOW, and MINLEN, had their values set to 3, 3, 4:15, and 36, respectively. Read alignment was performed using STAR \citep{dobin2013star}, with the hg19 genome reference being employed. STAR was configured to recognize that a read overlaps a gene, regardless of whether it maps to the same or opposite strand. Read counting was carried out with HTseq, and the gene symbols were annotated using the HUGO Gene Nomenclature Committee \citep{anders2015htseq}.
+
+The process of transcript filtering was carried out in three distinct steps. Firstly, the read counts were normalized using the counts per million. Subsequently, transcripts were filtered based on the global average of reads, where the read count per transcript and per sample were observed. Lastly, transcripts were removed if the sum of their counts across all samples was less than the global average of reads. After following this process, we carried out a transcript and sample filtering according to the best practices for co-expression and differential co-expression analysis. These best practices include using 20 or more samples per group, ensuring both a large volume of reads per sample (around 10 million) and a high read depth, which corresponds to the number of times each nucleotide was read for each sequence \citep{ballouz2015guidance}.
+
+\subsection{The RNA-seq Harmonization Study (ROSMAP, MSBB, and Mayo Cohorts)}
+
+\hl{In addition to fusiform gyrus RNA-seq data, we accessed RNA-seq data from three large cohorts described as follows:}
+
+\begin{itemize}
+
+    \item ROSMAP stands for Religious Order Study (ROS) and Memory and Aging Project (MAP), which are two longitudinal clinical-pathological cohort studies conducted by RUSH University \citep{bennett2018religious}. ROS focuses on memory, motor, and functional problems related to aging and Alzheimer's disease in Catholic orders, while MAP investigates the decline in cognitive and motor function and the risk of Alzheimer's disease in the general population. Clinical data and transcriptomic RNA-seq data from post-mortem donors were accessed from ROSMAP, including tissues such as the dorsolateral prefrontal cortex (AD = 308, NC= 148), frontal cortex (AD = 24, NC= 25), head of the caudate nucleus (AD = 178, NC= 95), posterior cingulate cortex (AD = 156, NC= 102), and temporal cortex (AD = 26, NC= 25).
+
+    \item The Mount Sinai/JJ Peters VA Medical Center Brain Bank (MSBB) cohort consists of more than 2,000 well-characterized human brains and encompasses the entire range of cognitive and neuropathological disease severity, in the absence of detectable non-AD neuropathology \citep{wang2018mount}. The cohort follows rigorous inclusion and exclusion criteria. Neuropathological evaluations for each sample were carried out in accordance with the Consortium to Establish a Registry for Alzheimer's Disease (CERAD) protocol. The post-mortem tissue extraction, diagnostic, and neuropsychological procedures used in this cohort were approved by the Institutional Review Boards of both Mount Sinai and JJ Peters VA Medical Center. Among RNA-seq data from MSBB's post-mortem donors, tissues such as the frontal pole (AD = 132, NC= 90), inferior frontal gyrus (AD = 132, NC= 91), parahippocampal gyrus (AD = 146, NC= 83), and superior temporal gyrus (AD = 149, NC= 86) were included. Because of the low number of samples for the prefrontal cortex (AD = 8, NC= 3), this tissue was not included.}
+
+    \item The Mayo Clinic Study of Aging (Mayo) is a comprehensive investigation into the prevalence, incidence, and risk factors associated with mild cognitive impairment (MCI) and dementia. The study is designed as a prospective, population-based cohort study \citep{roberts2008mayo}, with in-person clinical evaluations conducted either at the Mayo Clinic Abigail Van Buren Alzheimer's Disease Research Clinic or at participants' residence using standardized protocols. To confirm a diagnosis of AD, the study relies on the NINCDS-ADRDA criteria. The Mayo Clinic Study of Aging incorporates RNA-seq post-mortem donor tissue data obtained from cerebellum and temporal cortex samples. This data includes samples from both individuals with AD (84 in cerebellum, 82 in temporal cortex) and healthy individuals (78 in both cerebellum and temporal cortex).
+
+\end{itemize}
+
+\subsection{RNA-seq data from Genotype-Tissue Expression database (GTEx)}
+
+In addition, we also explored RNA-seq data from GTEx (v8) for 13 different brain tissues, including the anterior cingulate cortex, cortex, cerebellum, frontal cortex, cerebellar hemisphere, hippocampus, hypothalamus, amygdala, nucleus accumbens, caudate nucleus, putamen, spinal cord, and substantia nigra \citep{lonsdale2013genotype}. This resulted in a total of 2,642 samples from the 17,382 samples cataloged by GTEx across 54 tissues donated by 948 individuals. Approximately 55\% of the cerebral tissue donors were between 60 and 70 years old. The RNA-seq expression data from the 13 brain tissues were preprocessed by the GTEx team, which involved aligning them with the GRCh38 genome and quantifying and normalizing each tissue using the software and techniques of STAR, RNA-Seq Expectation-Maximization (RSEM), and median gene-level transcription per million (TPM), respectively. These data were used to explore how genes are expressed at baseline.
+
+\subsection{Co-expression Network Analysis and Identification of Hub Genes in Alzheimer's Disease}
+
+To avoid processes unrelated to AD, we conducted co-expression analyses individually per group NC, AD, and samples of AD plus NC (NC+AD). The co-expression analysis was performed using \textit{CEMiTool}, which identifies co-expression modules \citep{russo2018cemitool}. \textit{CEMiTool} implements an unsupervised method for gene filtering based on the inverse gamma distribution and performs a tunning for parameter selection on the identification of modules, functional enrichment analysis based on the Reactome pathway database, and drawing interaction networks. Although not developed for RNA-seq data, \textit{CEMiTool} can process read counts by allowing the inside-built variance stabilizing transformation (VST). The tool has a dependency on \textit{WGCNA}, a standard \textit{R} package implemented to perform gene co-expression analysis \citep{langfelder2008wgcna}. Several \textit{WGCNA} procedures are imported for the execution of \textit{CEMiTool}, among which include functions for hierarchical clustering into modules and a modified version of the automatic soft-thresholding power selector function. \textit{CEMiTool} automatically identifies the best $\beta$ parameter. For RNA-seq data, \textit{CEMiTool} recommends the use of the VST function. Therefore, input data for these analyses were kept in a non-normalized discrete distribution. The output is a user-friendly report for co-expression analysis, which include a summary of gene counts, over-representation analysis of functional pathways (ORA), gene-gene co-expression networks, gene-gene interaction networks, and hub genes. Additionally, we measured module stability by comparing the results of CEMiTool under all samples and CEMiTool by bootstrapping 70\% of samples at each iteration (100x). The module stability was accessed based on the number of detected modules, elements in each module, and the number of hubs.
+
+\subsection{Differential Co-expression Network Analysis}
+
+Similar to co-expression experiments, we performed differential co-expression network analysis (DCGNA) with \textit{diffcoexp} for NC, AD, and NC+AD groups. The \textit{diffcoexp} were performed to investigate Differential Co-expressed Links (DCLs), defined as gene pairs with statistical significance concerning the difference of the correlation coefficients under two conditions, and Differential Co-expressed Genes (DCG), genes with particularly more DCLs than expected by chance \citep{wei2018diffcoexp}. \textit{diffcoexp} has a dependency on \textit{WGCNA} and allows the identification of pairs of genes co-expressed in at least one condition, the comparison of gene-gene correlation coefficients between each condition, and the DCGNA itself. \textit{diffcoexp} uses Fisher's Z transformation to compare the level of correlation between pairs of genes under two conditions (case \textit{vs} control) in order to identify DCLs. The DCGs are defined through the binomial probability model, taking into account the number of links between co-expressed pairs \citep{jiang2016differential}.
+
+\subsection{Gene Ontology for Networks}
+
+After performing DGCNA, we converted the sub-network into the STRING network format using \textit{Cytoscape} \citep{szklarczyk2023string}. We then visualized and analyzed the DCLs and DCGs using gene ontology (GO) analysis and \textit{EnrichmentMap} \citep{isserlin2014enrichment}. This approach allowed us to investigate the molecular functions and biological processes associated with enriched GO terms (FDR $\leq$ 0.05), providing insights into AD mechanisms.
+
+\subsection{Gene expression-based prediction}
+
+We used eXtreme Gradient Boosting (XGBoost, \citep{xgboost}) to fit boosted tree models for predicting AD status. Specifically, we set XGBoost to use a binary logistic objective function for the binary prediction task and ten rounds of 5-fold cross-validation. DE genes (\cite{cavalcante2022mitochondrial}), co-expressed gene hubs and DCGs were used as features to assess the predictive performance, which was measured by the mean Area Under Curve (AUC) and error test mean. Likewise, we examined the predictive value of differential co-expressed network sub-network using the same metrics.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+
+\subsection{Transcripts Abundance in Fusiform Gyrus}
+
+We identified ~42,000 transcripts in the fusiform gyrus and a catalog of 30,115 well-annotated transcripts by merging RNA-seq transcripts with the Hugo Gene Nomenclature Committee from European Bioinformatics Institute. The annotated transcripts set were split into protein-coding genes (n = 17,829), pseudogenes (n = 7,111), non-coding RNAs (n = 4,834), and others (n = 341). This transcript annotation was performed aiming to focus only on protein-coding genes.
+
+After gene annotation, the gene expression matrix was submitted to a read-filtering process before co-expression network analysis and differential co-expression analysis for quality control regarding best statistical practices. The filtering process removed non-expressed transcripts (with roughly zero expression) within samples. Thus, 18,619 transcripts remained in AD samples, 16,598 transcripts remained in NC, and 19,207 transcripts remained in the pooled NC+AD group. Subsequently, a filter per sample was performed to remove samples with gene read counts below the recommended threshold of 10 million reads. A total of six samples were removed from all our analyses, five from the AD samples and one from the NC samples.
+
+\subsection{Specific Structure of Co-expressed Genes and Enrichment for Functional Pathways in Fusiform Gyrus}
+\label{sec:pathways}
+
+\hl{CEMiTool's unsupervised filtering method resulted in the co-expression analysis of 1,284 transcripts for AD group, 927 transcripts for NC, and 1,303 transcripts for NC+AD samples.}
+Co-expressed gene modules, their enriched biological pathways, as well as important hub genes associated with AD were identified by gene co-expression network analysis experiments. \hl{Overall, our analysis identified three modules in AD patients, five gene modules in NC samples, and three in pooled samples (NC+AD).} For the AD, we assessed module consistency by resampling strategy (100x). Our results demonstrated high stability in identifying exactly three gene modules, with an accuracy of 74\%. However, in 24\% of the permutations, we found a fourth module, while only 2\% of the permutations showed the presence of only two modules. On average, Module 1 (M1) contained 558.2 genes (+/-60.30), Module 2 (M2) contained 438.1 genes (+/-64.13), and Module 3 (M3) contained 135.4 genes (+/-32.90).
+
+The AD gene modules and their corresponding hubs are depicted in a clear manner in Figure \ref{fig:figure1}A, while the co-expression and interaction networks of AD and NC groups are shown in Supplementary Figures S1 and S2. In comparison, we note a distinction between gene modules and subsequently network structure of regulatory genes across conditions (AD and NC). With a focus on exclusive genes, 121 are AD-specific co-expressed genes (Figure \ref{fig:figure1}B) and four exclusive, out of eight co-expression gene hubs, namely \textit{PKN2}, \textit{FNDC3A}, \textit{NRIP1}, \textit{TMTC2} (see Figure \ref{fig:figure1}C). The hub genes identified in the co-expression analysis are exceptional to the analysis and do not overlap with the differential co-coexpressed network (Figure \ref{fig:figure1}D), detailed in Section \ref{sec:diffcoexp}.
+
+Over-representation analysis, which was implemented in \textit{CEMiTool}, revealed 52 functional pathways enriched for the NC group, 65 for the AD group, and 95 for the NC+AD group (adjusted p-value and q-value (FDR) $\leq$ 0.05). Convergences between groups are represented in the Venn diagram in Figure \ref{fig:figure2}A. Among the pathways exclusive to AD, 11 were identified, comprising six Toll-like Receptors (\textit{TLR}) cascade-related pathways and five signal transportation pathways. Notably, three of the signal transportation pathways involve membrane transport by G proteins, \textit{PIP2} hydrolysis production of secondary messengers, and \textit{EPH-Epherin} long-term potentiation (\textit{LTP}) (see Table \ref{fig:figure2}B).
+
+\hl{Interestingly, among the 75 genes described by \citet{bellenguez2022new}, only seven (\textit{TMEN106B}, \textit{MS4A4A}, \textit{ADAMTS1}, \textit{ABCA1}, \textit{HLA-DQA1}, \textit{CD2AP} and \textit{CR1}) were not removed by CEMiTool's filtering method and underwent co-expression analysis. With the exception of \textit{HLA-DQA1}, all genes were grouped into module 2 (M2) in AD group, which is enriched by all \textit{TLR}-related AD-exclusive pathways. \textit{HLA-DQA1} was not group in any module in AD samples, however, it was grouped in module 4 (M4) in NC samples.}
+
+\subsection{Differential Co-expression Network and Hub Genes with Differential Co-expressed Links}
+\label{sec:diffcoexp}
+
+\hl{To perform the DGCNA, we assembled all identified genes from within the co-expressed modules found in AD or NC groups. Therefore, a total of 1,365 genes were evaluated using their links and correlations as basis.} The DGCNA generated a differential co-expressed network, hereafter AD-DiffCoexpNet, that comprises 47 genes and 47 differentially co-expressed links (Figure \ref{fig:figure3}, Supplementary Table 1). The AD-DiffCoexpNet overlaps with STRING interaction data, concerning 13 genes in a multi-edge protein-protein interaction network (PPI) with high confidence ($>$ 0.7) (see Figure \ref{fig:figure3}B). The PPI was evidenced by curated databases, including experimental data, genomic context information, and text-mining data.
+
+Hub analysis identified three DCGs out of a total of 47 genes in the network. The genes identified were Family with Sequence Similarity 153 Member B (\textit{FAM153B}), which exhibited 31 DCLs, Cytochrome P450 Family 2 Subfamily C Member 8 (\textit{CYP2C8}) with 11 DCLs, and Creatine Kinase, Mitochondrial 1B (\textit{CKMT1B}) with five DCLs. As shown, AD-DiffCoexpNet underlined these DCGs with the highest number of DCLs compared to the other genes. For \textit{CKMT1B}, \textit{CYP2C8}, and \textit{FAM153B}, we performed resampling analysis (100x) to assess the stability of their identification of these genes as DCGs, that accuracy values result in 0.64, 0.73, and 0.87, respectively (see Figure \ref{fig:figure3}C). 
+
+Gene ontology (GO) analysis showed that the differentially co-expressed genes (DCGs) were not enriched for neuronal processes (see Figure \ref{fig:figure3}A). Nonetheless, the network structure suggests that DCGs play an important role in the brain since they were found to be directly associated with genes involved in the regulation of synapse assembly, neurotransmitter levels, nervous system development, synaptic vesicle exocytosis, modulation of chemical synaptic transmission, and neurotransmitter transport (GO FDR $\leq$ 0.05).
+
+Gene expression in GTEx database suggests high expression of \textit{CKMT1B} and \textit{FAM153B} in the cerebellar hemisphere and cerebellum (see the heatmap in Figure \ref{fig:figure3}D). \hl{To get more confident molecular insights in AD, we investigated the overlap of DCGs and DCLs on AD-DiffCoexpNet in different cohorts and brain regions, including ROSMAP, MSBB, and Mayo RNA-seq data. Our analysis showed that the co-expression patterns of the AD-DiffCoexpNet are region-specific and not consistent across different cohorts and regions. Specifically, we observed a low level of adjusted mutual information between DGCNA in the fusiform gyrus and other brain regions. Figure \ref{fig:figure3}F illustrates the adjusted mutual information values between the identified networks, showing a range of 0.0 to 0.4. The highest AMI is shown between the gyrus fusiform, cerebellum, and temporal cortex in the Mayo cohort, a lower similarity is observed when compared to MSBB brain regions, and no similarity is shown with the ROSMAP cohort. Despite the low AMI values ($<$ 0.40), we identified 12 genes with differential co-expression links (CDH18, BEX5, SV2B, CHRNB2, CRYM, CHGB, SVOP, GAD2, PAK1, GAP43, NELL1, RAB3A) that were common between the gyrus fusiform, the cerebellum, and the temporal cortex. These findings suggest that although the co-expression pattern (DCGs and DCLs) in the gyrus fusiform is region-specific, some gene correlations are still common across different regions. Interestingly, we did not find the three DCGs (FAM153B, CYP2C8, CKMT1B) from the fusiform gyrus in other investigated regions, which also may suggest that these DCGs are tissue-specific.}
+
+\hl{ The expression-based prediction was accessed with XGBoost in a binary setting (AD x non-AD), which was trained for DE genes \citep{cavalcante2022mitochondrial}, co-expressed gene hubs, DCGs, DCGs combined with co-expressed gene hubs and the entire AD-DiffCoexpNet. Of these gene sets, the expression of genes in AD-DiffCoexpNet combined with XGBoost showed moderate predictive power for diagnosing AD in the fusiform gyrus, with an average AUC test score of 0.75 (+/-0.07) and an average test error of 0.21 (+/- 0.06). Differential co-expressed gene hubs showed the lowest predictive values (AUC $\approx$ 0.52) as shown in Figure \ref{fig:figure3}E}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Discussion}
+
+Previous studies investigated co-expression patterns in different brain tissues and identified co-expression networks for late-onset Alzheimer's disease. \citet{zhang2013integrated} performed a multi-tissue analysis and found strong segregation between brain regions by identifying modules using the \textit{WGCNA} algorithm and using an approach called modular differential connectivity to find functions and pathways with significant differences across conditions. The study also identified \textit{TYROBP} as a key regulator for the immune/microglia pathway, which was not identified in the current analysis. 
+
+\citet{mostafavi2018molecular} explore the frontal cortex through a system biology analysis in order to identify a molecular network to prioritize groups of genes that influence cognitive decline or neuropathology in AD. Samples were collected from two cohorts, which shared clinical and neuropathological standards, thus allowing for joint analyses. Their study used a module-trait network approach, which isolates genes into modules according to their co-expression patterns and known factors that could influence correlations, such as cell type prevalence. Modules with direct correlation to cognitive decline and other AD traits were isolated using Bayesian networks and were ranked to prioritize genes for \textit{in vitro} validation.
+
+Our research differed in methodological aspects. We investigate RNA-seq data from the fusiform gyrus and other large brain cohorts (ROSMAP, MSBB, and Mayo). Gene module identification was executed by \textit{CEMiTool}, which automatizes parameter selection for the co-expression analysis, avoiding parameter-selection bias. Regarding the identification of differences across conditions, our study performed a differential co-expression analysis to focus on identifying genes/transcripts with significant differences in co-expression between groups and observing how they act in the nervous system.
+
+Co-expression analysis and DGCNA are powerful tools that can aid in the discovery and improvement of knowledge related to the molecular architecture of complex diseases. In this study, the identification of hub genes, co-expressed gene modules, and an AD-DiffCoexpNet has provided valuable insights. Gene co-expression networks have the potential to reveal the behavior of groups of genes simultaneously, allowing for the identification of modules of correlated genes that may have potential molecular function and enrichment for functional pathways in specific conditions, such as healthy or disease cases \citep{chen2008variations}. On the other hand, differential co-expression networks can identify pairs of genes with significant differences in their correlation levels between conditions, thereby highlighting regulatory elements. By utilizing these powerful tools, researchers can gain a better understanding of the molecular mechanisms underlying complex diseases. This knowledge can help to identify potential therapeutic targets and ultimately improve patient outcomes.
+
+\subsection{\textit{FNDC3A}, \textit{NRIP1}, \textit{PKN2} and \textit{TMTC2} are co-oexpressed hubs in AD modules}
+
+We identified four hub genes, namely \textit{FNDC3A}, \textit{NRIP1}, \textit{PKN2}, and \textit{TMTC2}, which were exclusively present in the AD module. These hubs were prioritized among all co-expressed hubs based on CEMiTool's gene-gene interaction networks, which indicated that they had a high degree of connectivity within their respective module's interaction networks. Furthermore, their exclusive presence in the AD co-expression modules boosts their potential relevance to AD pathology.
+
+Previous experiments have reported Fibronectin Type III Domain-Containing 3A (\textit{FNDC3A}) expression in the whole adult brain and odontoblasts \cite{carrouel2008hugo}. The gene may be involved in glycosaminoglycan synthesis, which is one major part of the glycocalyx that acts on essential cell processes. Deregulated \textit{FNDC3A} expression may impact Heparan Sulfate Glycosaminoglycan (\textit{HSGAG}) levels, which promotes therapeutic application against AD. The knockout of \textit{HSGAG} genes decreases the proliferation of $\beta$-amyloid fibrils in the brain \citep{gags}.
+
+Other co-expressed hubs play different roles in normal cellular function. The Nuclear Receptor-Interacting Protein 1 (\textit{NRIP1}) plays a role in metabolic dysregulation and inflammation processes and has a dual regulation function. It negatively regulates energy homeostasis and positively regulates inflammatory response in macrophages, by indirect interaction between Nuclear Factor Kappa B (\textit{NF-$\kappa$B}) and \textit{TLR}-induced proinflammatory cytokines. Depletion of this gene was observed in the interruption of axonal degeneration \citep{ranea2022modulation}.
+
+In addition, the Transmembrane O-Mannosyltransferase Targeting Cadherins 2 (\textit{TMTC2}) encodes an integral membrane protein within the endoplasmatic reticulum (ER). The protein contains multiple clusters of tetratricopeptide domains and binds to the calcium uptake pump \textit{SERCA2B} and to the carbohydrate-binding chaperone calnexin. Through live cell calcium measurements, \citet{sunryd2014tmtc1} report that the overexpression of \textit{TMTC2} results in a reduction of calcium release from ER, while its knockdown stimulates calcium release, implying that the gene is involved in ER calcium homeostasis. Mutations in \textit{TMTC2} were previously reported in sensory organ disorders, such as sensorineural hearing loss and auditory neuropathy spectrum disorder \citep{guillen2018tmtc2}.
+
+\subsubsection{Gene co-expression analysis in fusiform gyrus reveals links with glaucoma}
+
+Based on the literature review, there is no established association between Protein Kinase N2 (\textit{PKN2}) and neurodegeneration or direct involvement in AD development. Whereas interestingly, genetic variants, such as single nucleotide polymorphisms in exons of \textit{PKN2} have been associated with elevated intraocular pressure, which may increase the risk for glaucoma \citep{Gao2018}. An initial study by \citep{Wostyn1557} emphasizes links between AD and glaucoma. Interestingly, AD patients also show optic nerve degeneration and loss of retinal ganglion cells, $\beta$-amyloid and tau protein deposition in the retina \cite{Wostyn1557, ramirez2017role}, and alteration of functional connectivity between visual areas dedicated to recognition like the fusiform and the inferior temporal gyri. Despite these overlaps, some links between both diseases are still underrepresented, such as intraocular pressure mechanisms \citep{sen2020neurodegeneration}.
+
+Associations between AD and glaucoma were also previously reported in \textit{TMTC2} researches. \citet{eisenhaber2021conserved} briefly reviewed GWAS studies of the gene in ethnic-specific cohorts. The first study was performed in a Japanese cohort, claiming that \textit{TMTC2} was a susceptible locus associated with primary open-angle glaucoma. However, follow-up studies in different ethnicity cohorts could not confirm those findings. Later, a multiethnic GWAS study identified \textit{TMTC2} among many novel risk loci for glaucoma \citep{choquet2018multiethnic}.
+
+Genetic comorbidity between AD and glaucoma is still unexplored, and consequently, how molecular changes affect both. Recently, \citet{zhao2021glaucoma} performed a meta-analysis of cohort studies to evaluate the association between glaucoma and AD. Based on \citet{zhao2021glaucoma}, the meta-analysis concluded that glaucoma is not an independent risk factor for dementia-related diseases. Given the importance of \textit{PKN2} in our results, we theorize that AD might play a function in the development of glaucoma disease, however, further studies are needed to support our hypothesis.
+
+\subsection{Over-represented pathways in AD modules}
+
+Over-representation pathway analysis in co-expression networks revealed molecular mechanisms in fusiform gyrus associated with \textit{TLR} cascades (\textit{TLR2}, \textit{TLR4}, \textit{TLR1:TLR2}, \textit{TLR6:TLR2} and \textit{MyD88:Mal} cascades), G protein signaling events (activation of potassium gates channels and inhibition of voltage-gated Ca2+ channels), \textit{PIP2} hydrolysis, and \textit{EPH-Epherin} mechanisms. These pathways play important roles in the immune response, synaptic transmission, and neuroplasticity, which are all processes that have been implicated in AD pathology. 
+
+ Reinforcing the amyloid and tau hypothesis. We identified pathways enriched for G Proteins and consequently, for G protein-Coupled Receptors \textit{GPCRs}, which are involved in the phosphorylation of tau through diverse downstream kinases, such as \textit{GSK-3$\beta$}, \textit{CDK-5} and \textit{ERKs} signaling cascade, and interacts with $\beta$-site \textit{APP} Cleaving Enzyme 1 (\textit{BACE1}), both which play a major role in AD \citep{chidambaram2020g, zhao2016g, deyts2019app}. \citet{huang2017role} reported that \textit{GPCRs} are successful targets for the therapeutic action on the central nervous system. Interestingly, APP/Go protein Gbeta/gamma-complex signaling was reported to mediate $\beta$-amyloid-dependent neuronal degeneration in hippocampal neurons of mice models, implying that the complex may be a promising target for therapeutic interventions in AD \citep{bignante2018app}.
+
+Also, \textit{TLRs} cascades trigger rapid inflammatory reactions and play a crucial role in the activation of inflammatory cascades and hypoxic-ischemic events, contributing to neuroprotective or detrimental effects of cerebrovascular diseases induced neuroinflammation \citep{ciesielska2021tlr4,ashayeri2021toll}. Recently, necroptosis mediated by \textit{TLRs} has been pointed to as a novel pathway associated with neuroinflammation \citep{yu2021necroptosis}.
+
+The \textit{EPH} receptors and their ligands, \textit{Ephrins}, are involved in short-distance cell-cell signaling, regulating many neurological processes not only during development but also in adulthood. These processes include developmental cell sorting and synaptic plasticity, making the \textit{EPH-Ephrin} signaling pathway essential for many physiological functions. Studies in AD-animal models have reported both beneficial effects and dysfunctions in synaptic plasticity and spine morphology due to \textit{EPH} dysregulations, suggesting that the pathway might play an important role in AD \citep{kania2016mechanisms}. Furthermore, other studies support the association between \textit{EPH-Epherin} signaling and AD pathogenesis. For instance, \citet{buhl2022effects} investigated the effect of mutant EphA1 receptors on a Drosophila model and observed changes in behavior and neurophysiology related to AD. Meanwhile, \citet{ganguly2022mechanistic} studied the possible therapeutic implications of inhibiting the EphA-4 receptor for the targeted therapy of AD.
+
+Phosphatidylinositol 4,5-bisphosphate (\textit{PIP2}) hydrolysis, mediated by phospholipase C (PLC), generates two major second messengers, inositol 1,4,5-triphosphate (IP3) and diacylglycerol. Diacylglycerol activates protein kinase C (\textit{PKC}), which plays a crucial role in the functional control of various proteins. The activation of PLC$\beta$ by Gq proteins and subsequent regulation of diverse cellular processes make them major disease drivers \citep{carr2021fluorogenic, kankanamge2021dissociation}. \citet{he2019amyloid} reports that synaptic induction of metabotropic glutamate receptor 5 (mGluR5) can hydrolyze \textit{PIP2}, which underlies the reduced release probability in early AD (presynaptic), or can function as a $\beta$-amyloid receptor (postsynaptic). This finding suggests that an increase in presynaptic \textit{PIP2} levels may improve cognition in AD.
+
+\subsection{Differential Co-expressed Network Predicts Dementia Moderately}
+
+While co-expression network analysis can reveal biological mechanisms, it does not necessarily indicate causality. However, newer methods such as DGCNA can improve the identification of genes that regulate complex diseases such as Alzheimer's. We identified \textit{FAM153B}, \textit{CYP2C8}, and \textit{CKMT1B} as highly differentially co-expressed genes with potential implications in neurodegeneration, despite not being directly enriched in neuronal-related processes. Although \textit{FAM153B} is highly expressed in the cerebellar hemisphere and cerebellum and may have a crucial role in neurons, its function remains poorly understood, with no reported findings as of yet. In contrast, the \textit{CYP} and \textit{CKMT} families have been implicated in neurodegeneration. \textit{CYP2C8} belongs to the Cytochromes P450 superfamily of enzyme-encoding genes and is involved in many metabolic pathways, that metabolize over 90\% of drugs, including cholinesterase inhibitors such as tacrine, donepezil, and galantamine \citep{cacabelos2007pharmacogenetic}.
+
+Cholinesterase and acetylcholinesterase inhibition has shown potential in reducing neurodegenerative effects in patients with AD \citep{sharma2019cholinesterase}, which likewise encourages the development of new cholinesterase inhibitors, since current agents may cause several side effects. While \textit{CKMT1B} is a mitochondrial creatine kinase encoding gene commonly co-expressed with other creatine kinases and is particularly found in tissues with high-energy demands, such as the brain. The gene is considered a major target of oxidative-induced molecular damage in ischemic, cardiomyopathy, and neurodegenerative diseases \citep{shi2021ckmt1b}. 
+
+\hl{Several studies have suggested that co-expressed hubs with high connectivity tend to be biologically important and have a higher likelihood of being differentially expressed, but more studies need to be performed to investigate this aspect in differential co-expressed network analysis. The relationship between the AUC of coexpression hubs and the odds of being differentially expressed or differential co-expressed is complex and may be tissue-specific. Thus, it is important to consider multiple factors and carefully evaluate the performance and biological relevance of the model in the specific context of the study. We report DCGs and DCLs in Alzheimer's disease using RNA-seq data from various brain regions and cohorts, including the GTEx database, ROSMAP, MSBB, and Mayo, that suggests our AD-DiffCoexpNet are specific to fusiform gyrus. Nonetheless, we identified 12 genes with DLCs that were common between the gyrus fusiform, cerebellum, and temporal cortex, despite low adjusted mutual information (AMI) values. We also found that some genes are still common across different brain regions, although DCGs like FAM153B, CYP2C8, and CKMT1B were not found across any other investigated regions, suggesting their tissue-specificity.}
+
+\hl{We have shown significant insights on mechanisms of Alzheimer's disease by employing state-of-the-art machine learning techniques like XGBoost, demonstrating the robustness and stability of the XGBoost models, DCGs and AD-DiffCoepNet, despite moderate prediction (AUC = 0.75). The method incorporated DE genes, co-expressed gene hubs, DCGs, and the AD-DiffCoexpNet. Similar AUCs have been reported for genotype-based predictions \citep{randomforestapp, randomforestapp2}. Complex diseases such as AD involve multiple genetic variants \citep{bellenguez2022new}, genes, pathways, and environmental factors, making it challenging to identify the key biomarkers and relationships that drive disease progression. The choice of machine learning algorithms and model parameters can also affect the accuracy of predictions in AD. Small datasets may lack diversity, and may not capture the full range of biological variability needed for accurate predictions, which have been improved by sharing "omics" data in public databases. It is essential to carefully evaluate and optimize each of these factors to improve the accuracy of predictions.}
+
+\hl{Differential co-expression captured the strength of association between genes in different conditions. In the case of AD-DiffCoexpNet, it is possible that the regulation of genes is influenced by transcription factors that either promote or inhibit gene expression. There could also be promoter variants present in AD samples that affect the binding of transcription factors and the subsequent interactome, ultimately leading to changes in gene expression levels. Further research is needed to confirm this hypothesis. In healthy conditions, correlated genes are often linked through shared regulatory elements, such as genetic variants, transcription factors, enhancers, or chromatin modifications. These elements can affect the expression of multiple genes simultaneously, resulting in differential co-expression patterns among related genes. This differential gene co-expression can contribute to disease progression and warrants further investigation}. These findings are important for understanding the restricted specificity of gene co-expression networks in AD, which could have implications for disease progression and treatment development. While our study has provided new insights into the molecular mechanisms underlying AD and dementia pathogenesis, it is important to note that the small number of available fusiform gyrus samples is a significant limitation. Unfortunately, this has prevented us from performing experimental validation of our findings in this brain region. Therefore, further studies with larger sample sizes are necessary to confirm and extend our findings.
+
+\subsection{Final considerations}
+
+Our data-driven approach has led to the discovery of a valuable differentially co-expressed gene network associated with Alzheimer's disease. The AD-DiffCoexpNet is enriched with crucial neuronal-related processes, including neuron projection, synapses, and neural system development, and highlights the association of AD and complex biological gene-gene interaction networks. Our study carefully examined RNA-seq experiments from the fusiform gyrus and cross-brain regions and large brain cohorts. In fusiform gyrus, seven novel candidate genes were identified co-expressed in AD, including \textit{FNDC3A}, \textit{NRIP1}, \textit{PKN2}, and \textit{TMTC2}, as well as differentially co-expressed genes such as \textit{FAM153B}, \textit{CYP2C8}, and \textit{CKMT1B}. In addition, the Toll-like Receptor Cascades are the most prominent pathway involved in dementia processes. To validate and strengthen our findings, we strongly encourage functional validation in longitudinal cohorts. Overall, this research significantly contributes to our understanding of the molecular mechanisms involved in Alzheimer's disease and has the potential to inform future therapeutic interventions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Conflict of Interest Statement}
+
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+\section*{Author Contributions}
+
+All authors contributed significantly to the preparation of the manuscript: Experimental study design, article writing, bioinformatics, and statistical analysis. All authors have read and agreed to the published version of the manuscript.
+
+\section*{Funding}
+
+This research was funded by Pró-Reitoria de Pesquisa e Pós-Graduação da Universidade Federal do Pará (PROPESP-UFPA/Brazil); G.S.A was supported by Fundação Amazônia Paraense de Amparo à Pesquisa – FAPESPA (No. BJT—2021/658671). The funders had no role in the design of the study, collection, analysis, interpretation of the data, or writing of the manuscript.
+
+\section*{Data Availability Statement}
+
+Fusiform girus for RNA-seq data is available at \url{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE125583}. R and python scripts and secondary analysis of gene co-expression data can be found at \url{https://github.com/Gilderlanio/coexpression-ad} and \url{https://github.com/Gilderlanio/differentialcoexp-ad}.
+
+\section*{Acknowledgement}
+
+The results published here are in whole or in part based on data obtained from the AD Knowledge Portal ( https://adknowledgeportal.org ). Data generation was supported by the following NIH grants: P30AG10161, P30AG72975, R01AG15819, R01AG17917, R01AG036836, U01AG46152, U01AG61356, U01AG046139, P50 AG016574, R01 AG032990, U01AG046139, R01AG018023, U01AG006576, U01AG006786, R01AG025711, R01AG017216, R01AG003949, R01NS080820, U24NS072026, P30AG19610, U01AG046170, RF1AG057440, and U24AG061340, and the Cure PSP, Mayo and Michael J Fox foundations, Arizona Department of Health Services and the Arizona Biomedical Research Commission. We thank the participants of the Religious Order Study and Memory and Aging projects for their generous donation, the Sun Health Research Institute Brain and Body Donation Program, the Mayo Clinic Brain Bank, and the Mount Sinai/JJ Peters VA Medical Center NIH Brain and Tissue Repository. Data and analysis contributing investigators include Nilüfer Ertekin-Taner, Steven Younkin (Mayo Clinic, Jacksonville, FL), Todd Golde (University of Florida), Nathan Price (Institute for Systems Biology), David Bennett, Christopher Gaiteri (Rush University), Philip De Jager (Columbia University), Bin Zhang, Eric Schadt, Michelle Ehrlich, Vahram Haroutunian, Sam Gandy (Icahn School of Medicine at Mount Sinai), Koichi Iijima (National Center for Geriatrics and Gerontology, Japan), Scott Noggle (New York Stem Cell Foundation), Lara Mangravite (Sage Bionetworks).
+
+
+\bibliographystyle{Frontiers-Harvard} %  Many Frontiers journals use the Harvard referencing system (Author-date), to find the style and resources for the journal you are submitting to: https://zendesk.frontiersin.org/hc/en-us/articles/360017860337-Frontiers-Reference-Styles-by-Journal. For Humanities and Social Sciences articles please include page numbers in the in-text citations 
+%\bibliographystyle{Frontiers-Vancouver} % Many Frontiers journals use the numbered referencing system, to find the style and resources for the journal you are submitting to: https://zendesk.frontiersin.org/hc/en-us/articles/360017860337-Frontiers-Reference-Styles-by-Journal
+\bibliography{bib}
+
+%%% Make sure to upload the bib file along with the tex file and PDF
+%%% Please see the test.bib file for some examples of references
+
+\section*{Figure captions}
+
+\begin{figure}[!ht]
+    \begin{center}
+    \includegraphics[width=\textwidth]{Fig/Figure1.png}
+    \end{center}
+    \caption{General distribution of genes from both co-expression and differential co-expression analysis. \textbf{(A)} Simplified representation of co-expressed gene hubs and their respective gene modules identified by CEMiTool in the fusiform gyrus of Alzheimer's disease. \textbf{(B)} Distribution of co-expressed genes across each condition. \textbf{(C)} Distribution of co-expressed gene hubs across each condition. \textbf{(D)} The overall intersection of co-expressed gene hubs in AD, differential co-expressed genes (DCG), and genes with differential co-expressed links (DCL) in AD.}
+    \label{fig:figure1}
+\end{figure}
+
+\begin{figure}[!ht]
+    \begin{center}
+    \includegraphics[width=0.9\linewidth]{Fig/Figure2.png}
+    \end{center}
+    \caption{Distribution of over-represented pathways across each condition. \textbf{(A)} Overall functional enrichment analysis highlights 11 pathways with statistical significance (FDR $<=$ 0.05) in Alzheimer's Disease. \textbf{(B)} Table with significant pathways for Alzheimer's Disease group and its respective modules.}
+    \label{fig:figure2}
+\end{figure}
+
+\begin{figure}[!ht]
+    \begin{center}
+    \includegraphics[width=0.9\linewidth]{Fig/Figure3.png}
+    \end{center}
+    \caption{Differential Co-expression Network. \textbf{(A)} Differential co-expressed sub-network identified by \textit{diffcoexp} with 65 genes and 47 differential expressed links. The three highly connected DCGs are highlighted as orange nodes. \textbf{(B)} STRING database highlights a multi-edge protein-protein interaction sub-network for differentially expressed genes. Different colors in edges represent evidence of interaction based on co-expression. Most importantly, these interactions are evidenced by curated databases (pink edges) and experimentally determined (black edges). \textbf{(C)} Stability (accuracy) of DCGs after the 100-fold sample bootstrap tests. \textbf{(D)} Baseline expression level of the three identified DCGs on 13 tissues of normal brains cataloged in GTEx. \textbf{(E)} Test AUC mean and Test error mean of 5-fold cross-validation of XGboost regarding sets of genes. (F) Pairwise Adjusted Mutual Information for differential gene co-expression networks.}
+    \label{fig:figure3}
+\end{figure}
+
+
+\end{document}
